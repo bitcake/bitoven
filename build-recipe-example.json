@@ -1,11 +1,11 @@
 {
-    "Enabled": true|false,
+    "Enabled": true,
     "RepositoryName": "<Repository Name>",
     "Type": "Message|Tag|Branch",
     "Target": "<Build Trigger>",
     "NeededSize": 123,
     "SlackWebhookUrl": "<Slack Webhook URL (Optional)>",
-    "UploadToS3": "true|false",
+    "UploadToS3": true,
     "RepositoryInfo": {
         "Type": "Mercurial|Git",
         "Url": "<Repository URL>",
