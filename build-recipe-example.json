@@ -1,0 +1,32 @@
+{
+    "Enabled": true|false,
+    "RepositoryName": "<Repository Name>",
+    "Type": "Message|Tag|Branch",
+    "Target": "<Build Trigger>",
+    "NeededSize": 123,
+    "SlackWebhookUrl": "<Slack Webhook URL (Optional)>",
+    "UploadToS3": "true|false",
+    "RepositoryInfo": {
+        "Type": "Mercurial|Git",
+        "Url": "<Repository URL>",
+        "KeyName": "<uploaded key name>"
+    },
+    "BuildData": {
+        "ImageId": "<AMI identifier>",
+        "InstanceType": "<Machine Type>",
+        "ProjectSubFolder": null,
+        "BuildCommands": [
+            "-username <unity-username>",
+            "-password <unity-password>",
+            "-serial <unity-serial>",
+            "-executeMethod <BuildMethod>",
+            "<additional build parameters>"
+        ]
+    },
+    "SteamUploadData": {
+        "SteamAuthFilenames": [
+            "<uploaded auth file name>",
+            "<uploaded auth file name>"
+        ]
+    }
+}
