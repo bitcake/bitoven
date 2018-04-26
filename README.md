@@ -39,7 +39,7 @@ Each AMI has it’s own Unity version and BitOven core version. You should use t
 New AMIs with specific versions can be requested at jefferson@bitcakestudio.com we’ll do our best to accommodate reasonable requests.
 
 ### Available AMIs
-- ami-9be189e3: Version 1.0.1 Unity 2017.4.1f1
+- ami-084b2070: Version 1.0.2 Unity 2017.4.1f1 (bitbucket, xp-dev mercurial keys)
 
 ## The AWS Stack
 
