@@ -67,7 +67,7 @@ BitOven orchestrates the builds based on data called BuildRecipe, each AWS Stack
 - **Type**: “Message”, ”Tag” or “Branch”. Currently only message works, but “Tag” and “Branch” are being worked on
 - **Target**: The message/tag/branch that will trigger the build
     Example: If RepositoryName is “Holodrive”, Type is “Message” and Target is “[steam]”, all pushed commits that have ‘[steam]’ in the commit message will trigger a new build.
-- NeededSize: A number, in gigabytes, for the project storage container. This should be big enough to fit your project (with the library folder) + a built version of the project.
+- **NeededSize**: A number, in gigabytes, for the project storage container. This should be big enough to fit your project (with the library folder) + a built version of the project.
 - **SlackWebhookUrl**: the url that slacks generates that enables BitOven to notify your team when the build is ready.
 - **UploadToS3**: true/false if the build output should automatically be uploaded to the S3 logbucket
 - **RepositoryInfo**:
