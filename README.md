@@ -18,15 +18,15 @@ BitOven is based on a serverless structure on AWS that supports varying workload
 It consists of 5 main components:
 
 1. The commit hook
-  - A serverless function that handles your repository webhooks (currently supports bitbucket with mercurial)
+  -- A serverless function that handles your repository webhooks (currently supports bitbucket with mercurial)
 2. A processing queue
-  - That handles messages about important commits and orchestrates all the build requests
+  -- That handles messages about important commits and orchestrates all the build requests
 3. A DynamoDB Table with all the Build Targets your studio wants built
-  - So for each of your repositories you can specify any number of build targets you want, each of them has their own sets of commands to execute, can use a specific version of an AMI or a different sized machine. Want a ultra fast urgent build, fire up a xtra large machine instead of a regular one. 😉
+  -- So for each of your repositories you can specify any number of build targets you want, each of them has their own sets of commands to execute, can use a specific version of an AMI or a different sized machine. Want a ultra fast urgent build, fire up a xtra large machine instead of a regular one. 😉
 4. A collection of Amazon AMIs for actually building stuff
-  - Machine templates that are configured to load up your projects and do the dirty work
+  -- Machine templates that are configured to load up your projects and do the dirty work
 5. A build plugin (*.unitypackage) for your Unity Projects
-  - The plugin is highly extensible and exposes some endpoints for your project to be built by the command line
+  -- The plugin is highly extensible and exposes some endpoints for your project to be built by the command line
 
 ## The AMIs
 
@@ -34,7 +34,7 @@ AMIs are pre-built machine images with the core of BitOven already setup into it
 Each AMI has it’s own Unity version and BitOven core version. You should use the correct version for your project in each build target.
 
 ### Example:
-  Your studio has 2 different projects for CI, one of them uses Unity 2018.1, the other one uses Unity 2017.4.1f1. So for each project you would look at the list of available AMIs in this document and find the id of the corresponding AMI in order to use it in the appropriate field.
+> Your studio has 2 different projects for CI, one of them uses Unity 2018.1, the other one uses Unity 2017.4.1f1. So for each  project you would look at the list of available AMIs in this document and find the id of the corresponding AMI in order to use it in the appropriate field.
 
 New AMIs with specific versions can be requested at jefferson@bitcakestudio.com we’ll do our best to accommodate reasonable requests.
 
