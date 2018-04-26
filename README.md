@@ -17,15 +17,15 @@ BitOven is based on a serverless structure on AWS that supports varying workload
 
 It consists of 5 main components:
 
-1. The commit hook
+1. ### The commit hook
   A serverless function that handles your repository webhooks (currently supports bitbucket with mercurial)
-2. A processing queue
+2. ### A processing queue
   That handles messages about important commits and orchestrates all the build requests
-3. A DynamoDB Table with all the Build Targets your studio wants built
+3. ### A DynamoDB Table with all the Build Targets your studio wants built
   So for each of your repositories you can specify any number of build targets you want, each of them has their own sets of commands to execute, can use a specific version of an AMI or a different sized machine. Want a ultra fast urgent build, fire up a xtra large machine instead of a regular one. 😉
-4. A collection of Amazon AMIs for actually building stuff
+4. ### A collection of Amazon AMIs for actually building stuff
   Machine templates that are configured to load up your projects and do the dirty work
-5. A build plugin (*.unitypackage) for your Unity Projects
+5. ### A build plugin (*.unitypackage) for your Unity Projects
   The plugin is highly extensible and exposes some endpoints for your project to be built by the command line
 
 ## The AMIs
