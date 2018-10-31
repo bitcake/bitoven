@@ -1,9 +1,9 @@
 # BitOven
 
-BitOven is BitCake's custom Continuous Integration (CI) solution.
+BitOven is [BitCake](http://bitcakestudio.com/)'s custom Continuous Integration (CI) solution.
 
 ## List of Requirements
-- An unlocked AWS account (Not in free trial mode, we use big machines)
+- An unlocked [AWS](https://aws.amazon.com/) account (Not in free trial mode, we use big machines)
 - IAM Access credentials (Key + Secret Key pair) with the following permissions:
   - Administrative Access (to be changed to less intrusive permissions in the future)
 - Access credentials for Unity login (username + password), with a unity plus or higher seat available, with the serial number
